@@ -1,0 +1,46 @@
+/* Icon Font CDN____________________ */
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+/* font-family: 'Material Symbols Outlined'; */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css');
+/* font-family: fontawesome; */
+@import url('http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css'); 
+/* font-family: xeicon;  */
+
+
+/* 나눔 */
+@font-face{
+  font-family: 'nanumsquare_eb';
+  src:url('../font/NanumSquareEB.woff') format('woff');
+}
+@font-face{
+  font-family: 'nanumsquare_r';
+  src:url('../font/NanumSquareR.woff') format('woff');  
+}
+
+/* 빙그레 */
+@font-face{
+  font-family: 'binggrae';
+  src:url('../font/Binggrae.woff') format('woff');  
+}
+@font-face{
+  font-family: 'binggrae_b';
+  src:url('../font/Binggrae-Bold.woff') format('woff');  
+}
+@font-face{
+  font-family: 'binggrae_Samanco';
+  src:url('../font/BinggraeSamanco.woff') format('woff');  
+}
+
+h2{
+  display: inline-block;
+  font-family: 'binggrae_b';
+  border-bottom: 2px solid #F2F2DC;
+  margin-bottom: 30px;
+  font-size: 50px;
+  padding: 4px 30px;
+}
+h3{font-family: 'binggrae'; font-size: 30px;}
+h4{font-family: 'nanumsquare_eb'; font-size: 20px;}
+h5{font-family: 'binggrae_Samanco' ; font-size: 20px;}
+
+p{line-height: 26px;}

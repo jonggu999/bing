@@ -1,0 +1,220 @@
+@import url(reset.css);
+@import url(font.css);
+
+section{
+  width: 1200px;
+  overflow: hidden;
+  display: flex;
+  margin-top: 300px;
+}
+
+.btn{
+  width: 180px;
+  background-color: #fff;
+  color: #F26DCF;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 2px 0;
+}
+.btn:hover{
+  background-color: #F26DCF;
+  color: #fff;
+}
+
+button{
+  margin-top: 10px;
+  width: 384px;
+  border: 0;
+  background-color: #7B44F2;
+  color: #fff;
+  border-radius: 20px;
+  font-size: 16px;
+  padding: 2px 0;
+  padding: 10px;
+  font-size: 18px;
+}
+button:hover{
+  background: linear-gradient(to left, #7B44F2, #F26DCF);
+}
+
+.goindex{
+  position: fixed;
+  top: 0;
+  height: 0;
+  width: 100%;
+  height: 100%;
+
+}
+
+/* __________ ______________________________ 회원가입 */
+.join{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+video{
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%;
+  filter: brightness(130%);
+  z-index: -10;
+}
+
+.join_modal{
+  position: relative;
+  height: 600px;
+  background-color: #fff;
+  border-radius: 30px;
+  overflow: hidden;
+  display: flex;
+}
+
+
+/* __________ 회원가입 입력 영역 */
+.join-info{
+  position: absolute;
+  width: 1030px;
+  height: 100%;
+  border: 0;
+  padding: 30px 100px;
+  display: flex;
+  gap: 30px;
+}
+
+/* _____ 정보 입력 jlt */
+.join-info ol{flex: 1;}
+.join-info label{width: 120px;}
+
+.join-info .jlt li{
+  margin: 12px 0px;
+  text-align: right;
+}
+
+.join-info .jlt div{
+  display: inline-block;
+  width: 160px;
+  text-align:left;
+}
+
+.join-info .jlt .top{
+  display: flex;
+  gap: 30px;
+  height: 135px;
+}
+.join-info .jlt input[id=user-id]{width: 195px;}
+.id-label div:nth-child(1){width: 136px;}
+.join-info .jlt{
+  line-height: 24px;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+.join-info .jlt p{color: #333; font-size: 14px;}
+
+
+.join-info .jlt input{
+  width: 195px;
+  border: 1px solid #ccc;
+  padding: 4px 8px;
+  outline: none;
+}
+.join-info .jlt input:focus{
+  border: 1px dashed #F26DCF;
+}
+.join-info .jlt input:focus::placeholder{opacity: 0;}
+
+.join-info .jlt select{
+  width: 195px;
+  border: 1px solid #ccc;
+  margin: 6px 6px 0 0;
+  outline: none;
+  padding: 4px;
+}
+.join-info .jlt .btn{
+  margin-top: 4px;
+}
+
+
+.join-info ol .clause li{display: flex;}
+
+/* _____ 약관확인 jrt */
+.join-info .jrt{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.join-info .jrt .jrtimg{
+  width: 100%;
+  height: 160px;
+  background-image: url(../image/children.png);
+  background-size: 100%;
+  background-position: 50%;
+  border-radius: 10px;
+}
+
+.join-info .allagree{font-weight: bold; margin-bottom: 16px;}
+.join-info .allagree input[name=chk]{display: none;}
+.join-info .allagree input[name=chk]+em{
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background: url(../image/check.png) no-repeat;
+  background-position: left;
+  margin-right: 5px;
+  transform: translateY(2px);
+}
+.join-info .allagree input[name=chk]:checked+em{
+  background-position: right;
+}
+
+.join-info .clause input[name=agree1],
+.join-info .clause input[name=agree2],
+.join-info .clause input[name=agree3]{display: none;}
+
+.join-info .clause input[name=agree1]+em,
+.join-info .clause input[name=agree2]+em,
+.join-info .clause input[name=agree3]+em{
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background: url(../image/radio.png) no-repeat;
+  background-position: left;
+  margin-right: 5px;
+  transform: translateY(2px);
+}
+
+.join-info .clause input[name=agree1]:checked+em,
+.join-info .clause input[name=agree2]:checked+em,
+.join-info .clause input[name=agree3]:checked+em{
+  background-position: right;
+}
+
+
+
+
+.join-info .clause li{
+  margin: 6px;
+  justify-content: space-between;
+}
+.join-info input{margin: 0 6px;}
+.join-info .clause input{margin: 0 6px 0 16px;}
+
+/* __________ 오른쪽 디자인영역 join-rtspace */
+.join-rtspace{
+  position: absolute;
+  right: 0;
+  width: 170px;
+  height: 100%;
+  background-color: #E51F19;
+}
+
+
+
+/* 로그인 */
+
+.join-info .join-info{border: 1px solid #000;}

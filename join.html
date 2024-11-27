@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>빙그레 - 회원가입</title>
+  <link rel="stylesheet" href="css/join.css">
+
+  <style>
+    body{align-items: center;}
+  </style>
+</head>
+<body>
+  <!--아이    #FAFAF3    #F2F2DC    연두/빨강    #CAF272    #E51F19    핑크/보라    #F26DCF    #7B44F2    #333    -->
+
+<main class="join">
+
+  <video src="video/color.mp4" autoplay muted poster="none"></video>
+  <a class="goindex" href="index.html"></a>
+    <section class="join_modal">
+
+      <form action="#" method="post">
+        <fieldset class="join-info">
+  
+          <ol class="jlt"><!-- 정보입력 -->
+            <li class="top">
+              <span><img src="image/bing_logo_pc.png" alt=""></span>
+              <p>건강과 행복을 함께 나누는<br> 밝은 미소의 메신저 빙그레</p>
+            </li>
+            <li class="id-label">
+              <div><label for="user-id" class="id">이메일</label></div>
+              <input type="email" id="user-id" placeholder="bing@email.com" autofocus required>
+              <label for="emailst" class="id">@</label>
+              <select name="select" id="emailst">
+                <option value="none" selected>직접 작성하기</option>
+                <option value="naver.com">naver.com</option>
+                <option value="gmail.com">gmail.com</option>
+                <option value="daum.net">daum.net</option>
+                <option value="hanmail.net">hanmail.net</option>
+                <option value="kakao.com">kakao.com</option>
+                <option value="hotmail.com">hotmail.com</option>
+              </select>
+              <p>이메일주소는 로그인 시 아이디로 사용됩니다.</p>
+              <input class="btn" type="submit" value="이메일 본인 인증하기">
+            </li>
+  
+            <li>
+              <div><label for="user-pw">비밀번호</label></div>
+              <input type="password" id="user-pw" placeholder="8자이상 20자이내. 영문,숫자의 조합" required>
+            </li>
+  
+            <li>
+              <div><label for="user-pwchk">비밀번호 확인</label></div>
+              <input type="password" id="user-pwchk" placeholder="위와 동일하게 입력해주세요" required>
+            </li>
+  
+            <li>
+              <div><label for="user-name">이름</label></div>
+              <input type="text" id="user-name" placeholder="실명을 입력해주세요" required>
+            </li>
+  
+            <li>
+              <div><label for="phone">전화번호</label></div>
+              <input type="tel" id="phone" pattern="[0-9]{3}-[0-9]{4}-[0-9]{5}" placeholder="전화번호를 적어주세요">
+              <input class="btn" type="submit" value="인증번호 전송">
+            </li>
+            <li>
+              <div><label for="phone-chk">인증번호 입력하기</label></div>
+              <input type="text" id="phone-chk" placeholder="6자리 숫자">
+              <input class="btn" type="submit" value="인증번호 확인">
+            </li>
+          </ol>
+  
+          <ol class="jrt"><!-- 약관확인 -->
+            <li class="jrtimg"></li>
+            <li class="jrtinfo">
+              <ol>
+                <li class="allagree">
+                  <label><input type="checkbox" name="chk" checked="checked"><em></em>모두 동의합니다.</label>
+                </li>
+                <li>
+                  <ul class="clause">
+                    <li>
+                      <p>이용약관 동의</p>
+                      <p>
+                        <label><input type="radio" name="agree1" checked="checked"><em></em>동의</label>
+                        <label><input type="radio" name="agree1"><em></em>동의안함</label>
+                      </p>
+                    </li>
+                    <li>
+                      <p>개인정보 취급방침 동의</p>
+                      <p>
+                        <label><input type="radio" name="agree2" checked="checked"><em></em>동의</label>
+                        <label><input type="radio" name="agree2"><em></em>동의안함</label>
+                      </p>
+                    </li>
+                    <li>
+                      <p>마케팅 정보 수신 동의</p>
+                      <p>
+                        <label><input type="radio" name="agree3" checked="checked"><em></em>동의</label>
+                        <label><input type="radio" name="agree3"><em></em>동의안함</label>
+                      </p>
+                    </li>
+      
+                    <li>
+                      <button type="submit">회원가입</button>
+                    </li>
+                  </ul>
+                </li>
+              </ol>
+            </li>
+          </ol>
+  
+        </fieldset>
+      </form>
+  
+      <div class="join-rtspace"></div>
+
+    </section>
+</main>
+
+</body>
+</html>
