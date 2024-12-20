@@ -101,6 +101,8 @@ nav .gnb{
   gap: 100px;
 }
 
+nav .gnb li{min-width: max-content;}
+
 /* submenu */
 nav .submenu{
   position: absolute;
@@ -201,7 +203,7 @@ nav .submenu li{margin-top: 20px;}
   z-index: -10;
 }
 #main-image h4{
-  padding: 70px;
+  padding: 120px;
   font-size: 60px;
   text-align: center;
   text-shadow: 0  0 30px rgba(255, 255, 255, 0.2);
@@ -212,6 +214,37 @@ nav .submenu li{margin-top: 20px;}
 #main-image h4:hover{
   color: rgba(255, 255, 255, 9);
   text-shadow: 0  0 5px #fff;
+}
+
+#main-image .scrollguide{
+  position: absolute;
+  bottom: 5%;
+  width: 50px;
+  height: 20px;
+  clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
+  border-radius: 5px;
+  background-color: #fff;
+  animation: sclguide-ani 1s infinite alternate ease-in-out;
+}
+
+@keyframes sclguide-ani{
+  0%{transform: translateY(0);}
+  100%{transform: translateY(5px);}
+}
+
+#main-image .scrollguide2{
+  position: absolute;
+  bottom: 4%;
+  width: 50px;
+  height: 20px;
+  clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.3);
+  animation: sclguide-ani2 0.5s infinite alternate ease-in-out;
+}
+@keyframes sclguide-ani2{
+  0%{transform: translateY(2px); filter: blur(0);}
+  100%{transform: translateY(0px); filter: blur(4px);}
 }
 
 .back_emt{
@@ -415,12 +448,12 @@ nav .submenu li{margin-top: 20px;}
   transition: 0.5s;
 }
 #news .slide:nth-child(1){
-  background-color: #CAF272;}
+  background-color: #a9f800;}
 #news .slide:nth-child(2){
-  background-color: #d7d3a8;}
+  background-color: #f6eb8b;}
 #news .slide:nth-child(3){
   color: #fff;
-  background-color: #7B44F2;
+  background-color: #260773;
 }
 #news .slide:hover{
   transform: translate(-10px,-10px);
